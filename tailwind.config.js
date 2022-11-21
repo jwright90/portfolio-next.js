@@ -7,6 +7,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+
+    fontSize: {
+      'base': ['18px', { lineHeight: '24px', fontWeight: '500' }],
+      'm': ['24px', { lineHeight: '32px', fontWeight: '700' }],
+      'l': ['48px', {lineHeight: '56px', letterSpacing: '-1.5px', fontWeight: '700'}],
+      'xl': ['88px', { lineHeight: '88px', letterSpacing: '-2.5px', fontWeight: '700' }]
+    },
+    extend: {
     colors: {
       dark: {
         100: '#242424',
@@ -18,13 +26,6 @@ module.exports = {
       },
       green: '#4EE1A0'
     },
-    fontSize: {
-      'base': ['18px', { lineHeight: '24px', fontWeight: '500' }],
-      'm': ['24px', { lineHeight: '32px', fontWeight: '700' }],
-      'l': ['48px', {lineHeight: '56px', letterSpacing: '-1.5px', fontWeight: '700'}],
-      'xl': ['88px', { lineHeight: '88px', letterSpacing: '-2.5px', fontWeight: '700' }]
-    },
-    extend: {
       fontFamily: {
         space: ['"Space Grotesk"', ...defaultTheme.fontFamily.sans]
       }
