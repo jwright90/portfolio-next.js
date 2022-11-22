@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,17 +14,7 @@ export default function Home() {
         </Head>
 
 
-        <nav className="grid grid-cols-12 py-8">
-          <ul className="col-span-10 md:col-span-9 col-start-1 lg:col-start-2 flex z-40">
-            <li className="mr-auto"><a className='text-m w-[170px] h-[50px]' href='#'>jasonwright</a></li>
-            <li className="">
-              <a className='w-[170px] h-[50px]' target="_blank" href='https://github.com/jwright90/'>
-                <Image src='/../public/images/icon-github.svg' height={25} width={25} />
-              </a>
-            </li>
-          </ul>
-
-        </nav>
+        <Navbar />
 
         <main>
           <section className="grid grid-rows-2 grid-cols-12 md:mt-[-180px] mt-[20px]">
@@ -31,9 +22,9 @@ export default function Home() {
               <p className="text-l xl:text-xl pb-12">
                 Nice to meet you! I'm <span className="underline decoration-green underline-offset-[11px]">Jason Wright</span>.
               </p>
-              <div className="absolute top-[-300px] sm:top-[-450px] md:top-[180px] left-[-500px] md:left-[-400px] md:top-[120px] md:left-[-360px]">
+              <div className="absolute top-[-300px] sm:top-[-450px] md:top-[180px] left-[-525px] md:left-[-400px] md:top-[120px] md:left-[-360px]">
                 <Image
-                  src='/../public/images/pattern-rings.svg'
+                  src='/images/pattern-rings.svg'
                   height={200}
                   width={600}
                   style={{ 'pointerEvents': 'none', 'userSelect': 'none' }}
@@ -52,15 +43,15 @@ export default function Home() {
             </div>
 
 
-            <div className="bg-dark-200 md:bg-dark-100 md:mt-[55px] min-h-[300px] sm:min-h-[450px] md:min-h-[720px] col-span-6 col-start-4 md:col-span-5 md:col-start-8 lg:col-start-7 row-end-1 row-span-1 md:row-span-full z-20 relative">
+            <div className="bg-gradient-to-t from-dark-100 md:bg-dark-100 md:mt-[55px] min-h-[300px] sm:min-h-[450px] md:min-h-[720px] col-span-6 col-start-4 md:col-span-5 md:col-start-8 lg:col-start-7 row-end-1 row-span-1 md:row-span-full z-20 relative">
               <Image
-                src='/../public/images/jason-profile-bw.png'
+                src='/images/jason-profile-bw.png'
                 fill
                 style={{ 'pointerEvents': 'none', 'userSelect': 'none', 'objectFit': 'cover' }}
               />
               <div className="h-[120px] w-[120px] md:h-[80px] md:w-[80px] lg:h-[100px] lg:w-[100px] 2xl:h-[120px] 2xl:w-[120px] absolute bottom-[20px] left-[300px] sm:left-[425px] md:left-[250px] lg:left-[380px] xl:left-[480px] 2xl:left-[-50px]">
                 <Image
-                  src='/../public/images/pattern-circle.svg'
+                  src='/images/pattern-circle.svg'
                   fill
                   style={{ 'pointerEvents': 'none', 'userSelect': 'none', 'objectFit': 'cover' }}
                 />
