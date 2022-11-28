@@ -8,7 +8,7 @@ const Navbar = () => {
       </ul>
       <ul className="col-span-12 pt-3 md:pt-0 md:col-span-3 md:col-start-11 flex z-40">
         <li className="">
-          <a className='w-[170px] h-[50px]' target="_blank" href='https://github.com/jwright90/'>
+          <a className='w-[170px] h-[50px]' target="_blank" rel="noreferrer" href='https://github.com/jwright90/'>
             <Image src='/images/icon-github.svg' height={25} width={25} />
           </a>
         </li>

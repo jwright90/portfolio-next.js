@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="grid grid-rows-2 grid-cols-12 md:mt-[-180px] mt-[-40px]">
       <div className="col-span-12 md:col-span-6 col-start-1 lg:col-start-2 row-span-full z-50 self-center relative md:pt-[200px] pt-[50px]">
         <p className="text-l xl:text-xl pb-12">
-          Nice to meet you! I'm <span className="underline decoration-green underline-offset-[11px]">Jason Wright</span>.
+          Nice to meet you! I&apos;m <span className="underline decoration-green underline-offset-[11px]">Jason Wright</span>.
         </p>
         <div className="absolute top-[-300px] sm:top-[-450px] md:top-[180px] left-[-525px] md:left-[-400px] md:top-[120px] md:left-[-360px]">
           <Image
@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
 
         <p className="text-light-200 text-base md:w-[400px] xl:w-[580px]">
-          Willing to relocate anywhere in the UK, I'm seeking my first frontend developer position using a Javascript or PHP framework.
+          Willing to relocate anywhere in the UK, I&apos;m seeking my first frontend developer position using a Javascript or PHP framework.
           I have a solid foundation in the basics (HTML, CSS &amp; JS), object oriented programming and MVC. I am looking to change careers
           from management accounting to software development.
         </p>

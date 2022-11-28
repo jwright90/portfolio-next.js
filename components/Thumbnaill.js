@@ -4,7 +4,6 @@ const Thumbnail = ({ img }) => {
   return (
     <Image
       src={`/images/thumbnail-project-${img}-large.webp`}
-      responsive
       height={400}
       width={650}
     />
