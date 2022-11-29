@@ -17,10 +17,9 @@ const Hero = () => {
           />
         </div>
 
-        <p className="text-light-200 text-base md:w-[400px] xl:w-[580px]">
-          Willing to relocate anywhere in the UK, I&apos;m seeking my first frontend developer position using a Javascript or PHP framework.
-          I have a solid foundation in the basics (HTML, CSS &amp; JS), object oriented programming and MVC. I am looking to change careers
-          from management accounting to software development.
+        <p className="sm:text-[21px] text-light-200 text-base md:w-[400px] xl:w-[580px]">
+          Based in Manchester, I&apos;m seeking my first frontend developer position, as I pursue a career change from management accounting.
+          I&apos;ve developed a broad skillset coding as a hobby over the years using various languages and frameworks.
         </p>
 
         <button className="uppercase mt-12 py-4 text-base tracking-widest border-b-2 border-green hover:text-green hover:cursor-pointer">
