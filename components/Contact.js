@@ -26,7 +26,7 @@ export default function Contact() {
   const [messageError, setMessageError] = useState(errorCSSHidden);
 
   // Set CSS for success message
-  const successCSS = "pb-4 flex flex-col gap-2 text-green delay-400 transition-all opacity-100 ease-linear";
+  const successCSS = "flex flex-col gap-2 text-green delay-400 transition-all opacity-100 ease-linear";
   const successCSSHidden = "p-0 m-0 flex flex-col gap-2 text-green delay-400 transition-all opacity-0 ease-linear";
 
   // Validation check method
@@ -161,7 +161,7 @@ export default function Contact() {
 
             <div className="flex items-center mt-4 ">
               <div className={showSuccessMessage ? successCSS : successCSSHidden}>Your message has been sent!</div>
-              <button type="submit" className="my-auto py-4 flex ml-auto text-base tracking-widest border-b-2 border-b-green uppercase focus:text-green hover:text-green hover:cursor-pointer focus:outline-none">
+              <button type="submit" className="my-auto pb-4 whitespace-nowrap ml-auto text-[16px] sm:text-base tracking-widest border-b-2 border-b-green uppercase focus:text-green hover:text-green hover:cursor-pointer focus:outline-none">
                 {buttonText}
               </button>
             </div>

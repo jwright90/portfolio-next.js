@@ -17,7 +17,7 @@ const Hero = () => {
           />
         </div>
 
-        <p className="sm:text-[21px] text-light-200 text-base md:w-[400px] xl:w-[580px]">
+        <p className="text-[18px] sm:text-[21px] text-light-200 text-base md:w-[400px] xl:w-[580px]">
           I&apos;m seeking my first frontend developer position, pursuing a career change from management accounting. <br /><br />
 
           I&apos;ve developed a broad skillset coding as a hobby over the years using various languages and frameworks, both front and backend.
