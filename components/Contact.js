@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image';
 import Border from "./Border"
 
 export default function Contact() {
@@ -110,10 +111,19 @@ export default function Contact() {
 
   return (
     <>
-      <div className="grid grid-cols-12 pb-8 pt-[80px]">
+      <div className="grid grid-cols-12 pb-8 pt-[80px] relative">
         <div className="col-span-12 lg:col-span-4 col-start-1 lg:col-start-2 mb-12 text-left">
           <h2 className="text-l sm:text-xl pb-8">Contact</h2>
           <p className="text-light-200 text-base sm:text-[21px] sm:leading-7">I would love to hear from you about any job opportunities and how I could help. Please fill in the form, and I&apos;ll get back to you as soon as possible.</p>
+
+          <div className="absolute bottom-[65px] lg:top-[450px] left-[-400px] lg:left-[-315px] md:left-[-360px]">
+            <Image
+              src='/images/pattern-rings.svg'
+              height={150}
+              width={500}
+              style={{ 'pointerEvents': 'none', 'userSelect': 'none' }}
+            />
+          </div>
         </div>
 
         <div className="col-span-12 lg:col-span-5 col-start-1 lg:col-start-7 text-left">
