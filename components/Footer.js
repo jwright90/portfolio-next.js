@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Footer = () => {
   return (
-    <section className="grid grid-cols-12 grid-rows-2 md:grid-rows-1 py-8 justify-items-center md:justify-items-start">
+    <section className="grid grid-cols-12 grid-rows-2 md:grid-rows-1 py-8 justify-items-center md:justify-items-start mb-4">
       <ul className="col-span-12 md:col-span-6 col-start-1 lg:col-start-2 flex z-40">
         <li className="mr-auto"><a className='text-m w-[170px] h-[50px]' href='#'>jasonwright</a></li>
       </ul>

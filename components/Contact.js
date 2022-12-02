@@ -92,23 +92,22 @@ export default function Contact() {
       setShowFailureMessage(false);
       setButtonText("Send Message");
 
+      const timer = setTimeout(() => {
+        setShowSuccessMessage(false);
+
+        setName("");
+        setEmail("");
+        setMessage("");
+
+      }, 2200);
+
+      () => clearTimeout(timer);
+
+      return;
+
     }
 
-    console.log(name, email, message);
   }
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowSuccessMessage(false);
-
-      setName("");
-      setEmail("");
-      setMessage("");
-
-    }, 2200);
-
-    return () => clearTimeout(timer);
-  }, [handleSubmit])
 
   return (
     <>

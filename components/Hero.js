@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="grid grid-rows-2 grid-cols-12 md:mt-[-180px] mt-[-40px]">
       <div className="col-span-12 md:col-span-6 col-start-1 lg:col-start-2 row-span-full z-50 self-center relative md:pt-[200px] pt-[50px]">
-        <p className="text-[32px] font-bold sm:text-l xl:text-xl pb-12">
+        <p className="text-[32px] font-bold sm:text-l xl:text-xl pb-12 leading-10">
           Nice to meet you! I&apos;m <span className="underline decoration-green underline-offset-[11px]">Jason Wright</span>.
         </p>
         <div className="absolute top-[-300px] sm:top-[-450px] md:top-[180px] left-[-555px] md:left-[-400px] md:top-[120px] md:left-[-360px]">
