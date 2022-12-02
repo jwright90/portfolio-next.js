@@ -116,11 +116,10 @@ export default function Contact() {
           <h2 className="text-l sm:text-xl pb-8">Contact</h2>
           <p className="text-light-200 text-base sm:text-[21px] sm:leading-7">I would love to hear from you about any job opportunities and how I could help. Please fill in the form, and I&apos;ll get back to you as soon as possible.</p>
 
-          <div className="absolute bottom-[65px] lg:top-[450px] left-[-400px] lg:left-[-315px] md:left-[-360px]">
+          <div className="absolute bottom-[65px] left-[-400px] lg:top-[400px] lg:left-[80px] xl:left-[110px] md:left-[-360px] h-[120px] w-[450px] lg:h-[150px] lg:w-[35%]">
             <Image
               src='/images/pattern-rings.svg'
-              height={150}
-              width={500}
+              fill
               style={{ 'pointerEvents': 'none', 'userSelect': 'none' }}
             />
           </div>
