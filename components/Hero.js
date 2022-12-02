@@ -8,7 +8,7 @@ const Hero = () => {
         <p className="text-[32px] font-bold sm:text-l xl:text-xl pb-12">
           Nice to meet you! I&apos;m <span className="underline decoration-green underline-offset-[11px]">Jason Wright</span>.
         </p>
-        <div className="absolute top-[-300px] sm:top-[-450px] md:top-[180px] left-[-525px] md:left-[-400px] md:top-[120px] md:left-[-360px]">
+        <div className="absolute top-[-300px] sm:top-[-450px] md:top-[180px] left-[-555px] md:left-[-400px] md:top-[120px] md:left-[-360px]">
           <Image
             src='/images/pattern-rings.svg'
             height={200}
