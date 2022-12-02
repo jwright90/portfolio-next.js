@@ -37,7 +37,7 @@ const Hero = () => {
           fill
           style={{ 'pointerEvents': 'none', 'userSelect': 'none', 'objectFit': 'cover' }}
         />
-        <div className="h-[110px] w-[110px] md:h-[80px] md:w-[80px] lg:h-[100px] lg:w-[100px] 2xl:h-[120px] 2xl:w-[120px] absolute top-[225px] sm:top-[550px] left-[285px] sm:left-[425px] md:left-[250px] lg:left-[380px] xl:left-[480px] 2xl:left-[-50px]">
+        <div className="h-[110px] w-[110px] md:h-[80px] md:w-[80px] lg:h-[100px] lg:w-[100px] 2xl:h-[120px] 2xl:w-[120px] absolute top-[225px] sm:top-[550px] left-[210px] sm:left-[425px] md:left-[250px] lg:left-[380px] xl:left-[480px] 2xl:left-[-50px]">
           <Image
             src='/images/pattern-circle.svg'
             fill

@@ -19,12 +19,13 @@ export default function Contact() {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [showFailureMessage, setShowFailureMessage] = useState(false);
 
+
   // Set CSS for error messages
   const errorCSS = "pb-4 flex flex-col gap-2 text-red-400 delay-400 transition-all opacity-100 ease-linear";
   const errorCSSHidden = "p-0 m-0 flex flex-col gap-2 text-red-400 delay-400 transition-all opacity-0 ease-linear";
-  const [nameError, setNameError] = useState(errorCSSHidden);
-  const [emailError, setEmailError] = useState(errorCSSHidden);
-  const [messageError, setMessageError] = useState(errorCSSHidden);
+  const [nameErrorCSS, setNameErrorCSS] = useState(errorCSSHidden);
+  const [emailErrorCSS, setEmailErrorCSS] = useState(errorCSSHidden);
+  const [messageErrorCSS, setMessageErrorCSS] = useState(errorCSSHidden);
 
   // Set CSS for success message
   const successCSS = "flex flex-col gap-2 text-green delay-400 transition-all opacity-100 ease-linear";
@@ -34,23 +35,23 @@ export default function Contact() {
   const handleValidation = () => {
     let tempErrors = {};
     let isValid = true;
-    setNameError(errorCSSHidden);
-    setEmailError(errorCSSHidden);
-    setMessageError(errorCSSHidden);
+    setNameErrorCSS(errorCSSHidden);
+    setEmailErrorCSS(errorCSSHidden);
+    setMessageErrorCSS(errorCSSHidden);
 
     if (name.length <= 0) {
       tempErrors["name"] = true;
-      setNameError(errorCSS);
+      setNameErrorCSS(errorCSS);
       isValid = false;
     }
     if (email.length <= 0) {
       tempErrors["email"] = true;
-      setEmailError(errorCSS);
+      setEmailErrorCSS(errorCSS);
       isValid = false;
     }
     if (message.length <= 0) {
       tempErrors["message"] = true;
-      setMessageError(errorCSS);
+      setMessageErrorCSS(errorCSS);
       isValid = false;
     }
     setErrors({ ...tempErrors });
@@ -139,7 +140,7 @@ export default function Contact() {
                 value={name}
               />
             </div>
-            <div className={nameError}>Please enter your name</div>
+            <div className={nameErrorCSS}>Please enter your name</div>
 
             <div className="py-4 flex flex-col gap-2">
               <label className="uppercase text-gray-400" htmlFor="email" >Email</label>
@@ -153,7 +154,7 @@ export default function Contact() {
                 value={email}
               />
             </div>
-            <div className={emailError}>Please enter your email</div>
+            <div className={emailErrorCSS}>Please enter your email</div>
 
             <div className="py-4 flex flex-col gap-2">
               <label className="uppercase text-gray-400" htmlFor="message" >Message</label>
@@ -166,7 +167,7 @@ export default function Contact() {
                 value={message}
               />
             </div>
-            <div className={messageError}>Please enter a message</div>
+            <div className={messageErrorCSS}>Please enter a message</div>
 
             <div className="flex items-center mt-4 ">
               <div className={showSuccessMessage ? successCSS : successCSSHidden}>Your message has been sent!</div>
