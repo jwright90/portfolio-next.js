@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Head>
         <title>Jason Wright - Web Developer</title>
-        <meta name="description" content="The personal portfolio of Jason Wright (front end web developer)." />
+        <meta name="description" content="The portfolio of Jason Wright, front end web developer." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Wrapper bg="bg-dark-200" additionalCss="min-h-screen">

@@ -1,6 +1,14 @@
 import Border from './Border';
 import Image from 'next/image'
 
+const handleClick = () => {
+  window.scrollTo({
+    left: 0,
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+  });
+}
+
 const Hero = () => {
   return (
     <section className="grid grid-rows-2 grid-cols-12 md:mt-[-180px] mt-[-40px]">
@@ -24,7 +32,10 @@ const Hero = () => {
           My preference is Next.js, but I&apos;m open to PHP based roles or learning a new stack.
         </p>
 
-        <button className="uppercase mt-12 py-4 text-base tracking-widest border-b-2 border-green hover:text-green hover:cursor-pointer">
+        <button
+          className="uppercase mt-12 py-4 text-base tracking-widest border-b-2 border-green hover:text-green hover:cursor-pointer"
+          onClick={handleClick}
+        >
           Contact Me
         </button>
 

@@ -135,6 +135,7 @@ export default function Contact() {
                 name="name"
                 onChange={(e) => {
                   setName(e.target.value);
+                  setNameErrorCSS(errorCSSHidden);
                 }}
                 value={name}
               />
@@ -149,6 +150,7 @@ export default function Contact() {
                 name="email"
                 onChange={(e) => {
                   setEmail(e.target.value);
+                  setEmailErrorCSS(errorCSSHidden);
                 }}
                 value={email}
               />
@@ -162,6 +164,7 @@ export default function Contact() {
                 name="message"
                 onChange={(e) => {
                   setMessage(e.target.value);
+                  setMessageErrorCSS(errorCSSHidden);
                 }}
                 value={message}
               />
