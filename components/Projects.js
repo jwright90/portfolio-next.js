@@ -1,3 +1,4 @@
+import Button from './Button';
 import Thumbnail from './Thumbnaill'
 
 const projects = [
@@ -19,7 +20,11 @@ const Projects = () => {
             <div className={`col-span-12 col-start-1 lg:col-span-5 lg:col-start-${p.col} lg:row-start-${p.row} relative`} key={p.id}>
               <Thumbnail img={p.img} />
               <div className="text-m uppercase mt-8">{p.title}</div>
-              <div>{p.tags[0]}</div>
+              <div className="mt-1">{p.tags[0]}</div>
+              <div className="flex xl:hidden gap-4 md:justify-start justify-center">
+                <Button text="View Project" css="xl:hidden mt-0 md:mb-2 mb-4 text-[16px] pb-2" />
+                <Button text="View Code" css="xl:hidden mt-0 md:mb-2 mb-4 text-[16px] pb-2" />
+              </div>
             </div>
           )) :
           <div className="col-span-12 col-start-1 lg:col-span-5 lg:col-start-2 relative">

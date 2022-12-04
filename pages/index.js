@@ -4,7 +4,6 @@ import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
 import Wrapper from '../components/layout/Wrapper'
 import Contact from '../components/Contact'
-import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
 
       <Wrapper bg="bg-dark-100">
         <Contact />
-        <Footer />
+        <Navbar />
       </Wrapper>
     </>
   )

@@ -1,14 +1,10 @@
 import Border from './Border';
+import Button from './Button';
 import Image from 'next/image'
 
 
 const handleClick = () => {
   document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
-  // window.scrollTo({
-  //   left: 0,
-  //   top: document.body.scrollHeight,
-  //   behavior: 'smooth'
-  // });
 }
 
 const Hero = () => {
@@ -34,12 +30,7 @@ const Hero = () => {
           My preference is Next.js, but I&apos;m open to PHP based roles or learning a new stack.
         </p>
 
-        <button
-          className="uppercase mt-12 py-4 text-base tracking-widest border-b-2 border-green hover:text-green hover:cursor-pointer"
-          onClick={handleClick}
-        >
-          Contact Me
-        </button>
+        <Button text="Contact Me" handleClick={handleClick} />
 
       </div>
 
