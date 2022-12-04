@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image';
 import Border from "./Border"
 
@@ -111,7 +111,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="grid grid-cols-12 pb-8 pt-[80px] relative">
+      <div className="grid grid-cols-12 pb-8 pt-[80px] relative" id="contact">
         <div className="col-span-12 lg:col-span-4 col-start-1 lg:col-start-2 mb-12 text-left">
           <h2 className="text-l sm:text-xl pb-8">Contact</h2>
           <p className="text-light-200 text-base sm:text-[21px] sm:leading-7">I would love to hear from you about any job opportunities and how I could help. Please fill in the form, and I&apos;ll get back to you as soon as possible.</p>

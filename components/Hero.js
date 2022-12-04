@@ -1,10 +1,11 @@
 import Border from './Border';
 import Image from 'next/image'
 
+
 const handleClick = () => {
   window.scrollTo({
     left: 0,
-    top: document.body.scrollHeight,
+    top: document.body.scrollHeight - document.getElementById('contact').offsetHeight,
     behavior: 'smooth'
   });
 }
