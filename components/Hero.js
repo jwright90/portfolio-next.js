@@ -3,11 +3,12 @@ import Image from 'next/image'
 
 
 const handleClick = () => {
-  window.scrollTo({
-    left: 0,
-    top: document.body.scrollHeight - document.getElementById('contact').offsetHeight,
-    behavior: 'smooth'
-  });
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
+  // window.scrollTo({
+  //   left: 0,
+  //   top: document.body.scrollHeight,
+  //   behavior: 'smooth'
+  // });
 }
 
 const Hero = () => {

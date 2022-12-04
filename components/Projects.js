@@ -9,7 +9,7 @@ const projects = [
 const Projects = () => {
 
   return (
-    <section className="grid grid-cols-12 grid-rows-7 gap-4 md:gap-8 pt-[80px] pb-[80px]">
+    <section className="grid grid-cols-12 grid-rows-7 gap-4 md:gap-8 pt-[80px] pb-[80px]" id="projects">
       <div className="col-span-12 lg:col-start-2 row-start-1 z-50 self-center relative">
         <h2 className="text-l sm:text-xl pb-4">Projects</h2>
       </div>
