@@ -1,1 +1,1 @@
-My personal portfolio based off Front End Mentor's design challenge: (https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x)
+My personal portfolio, based off Front End Mentor's design challenge: (https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x)
