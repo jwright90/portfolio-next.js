@@ -121,6 +121,7 @@ export default function Contact() {
               src='/images/pattern-rings.svg'
               fill
               style={{ 'pointerEvents': 'none', 'userSelect': 'none' }}
+              alt=""
             />
           </div>
         </div>

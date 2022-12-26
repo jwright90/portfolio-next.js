@@ -20,6 +20,7 @@ const Hero = () => {
             height={200}
             width={600}
             style={{ 'pointerEvents': 'none', 'userSelect': 'none' }}
+            alt="Hero Image"
           />
         </div>
 
