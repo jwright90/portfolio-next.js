@@ -82,7 +82,7 @@ const TicTacToe = () => {
         newGame();
       }, 1800)
     }
-  }, [handleSquareClick])
+  }, [handleSquareClick, board, winner])
 
   return (
     <div className={styles.container}>

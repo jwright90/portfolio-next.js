@@ -15,6 +15,7 @@ const Thumbnail = ({ img, linkText1, href1, href2 }) => {
         src={`/images/thumbnail-project-${img}-large.webp`}
         height={400}
         width={650}
+        alt={`Project Image ${img}`}
       />
     </div>
   )
