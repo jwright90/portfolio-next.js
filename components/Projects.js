@@ -23,7 +23,7 @@ const Projects = () => {
 
               <div className="flex gap-4">
                 {p.tags.map((tag) => (
-                  <div className="mt-1">
+                  <div className="mt-1" key={tag}>
                     {tag}
                   </div>
                 ))}
