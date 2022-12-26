@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import Board from "../../components/tictactoe/Board";
 import { calculateWinner } from '../../helpers/tictactoe_helpers';
 import styles from '../../styles/tictactoe/TicTacToe.module.scss'
@@ -39,7 +39,7 @@ const TicTacToe = () => {
 
   const draw = isDraw();
 
-  const handleSquareClick = position => {
+  const handleSquareClick = useCallback((position) => {
 
     if (board[position] || winner) {
       return;
@@ -58,7 +58,7 @@ const TicTacToe = () => {
 
     setIsXNext((prev) => !prev);
 
-  };
+  });
 
   useEffect(() => {
     if (winner) {
