@@ -20,7 +20,6 @@
 }
 
 .board {
-
   .boardRow {
     display: flex;
     gap: 20px;
@@ -104,6 +103,7 @@
 }
 
 .message {
+  font-size: 1.5rem;
   background-color: #1F3641;
   border-radius: 10px;
   box-shadow: 0 8px #10212A;
@@ -111,11 +111,12 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   width: 400px;
+  font-weight: 600;
 }
 
-.message::first-letter {
+.xLetter {
   font-weight: 900;
-  margin-right: 8px;
+  color: #31C3BD;
 }
 
 .reset {

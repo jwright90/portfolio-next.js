@@ -40,6 +40,7 @@ const TicTacToe = () => {
   const draw = isDraw();
 
   const handleSquareClick = position => {
+
     if (board[position] || winner) {
       return;
     }
@@ -62,18 +63,24 @@ const TicTacToe = () => {
   useEffect(() => {
     if (winner) {
       if (winner === 'X') {
-        xCount.current = xCount.current + 1;
-        newGame();
+        setTimeout(() => {
+          xCount.current = xCount.current + 1;
+          newGame();
+        }, 1800)
       }
       if (winner === 'O') {
-        oCount.current = oCount.current + 1;
-        newGame();
+        setTimeout(() => {
+          oCount.current = oCount.current + 1;
+          newGame();
+        }, 1800)
       }
     }
 
     if (!board.includes(null) && !winner) {
-      tiesCount.current = tiesCount.current + 1;
-      newGame();
+      setTimeout(() => {
+        tiesCount.current = tiesCount.current + 1;
+        newGame();
+      }, 1800)
     }
   }, [handleSquareClick])
 
