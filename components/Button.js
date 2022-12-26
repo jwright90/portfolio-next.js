@@ -4,7 +4,7 @@ const Button = ({ text, css, href = "", handleClick }) => {
 
   if (href) {
     return (
-      <Link href={href} >
+      <Link href={href} target="_blank" >
         <button
           className={`${css} uppercase mt-12 py-4 text-base tracking-widest border-b-2 border-green hover:text-green hover:cursor-pointer`}
           onClick={handleClick}

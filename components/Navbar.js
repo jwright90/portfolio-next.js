@@ -18,9 +18,9 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      <ul className="col-span-12 pt-3 md:pt-0 md:col-span-3 md:col-start-11 flex z-40 gap-6">
+      <ul className="col-span-12 pt-3 md:pt-0 md:col-span-3 md:col-start-11 flex z-40 gap-6 ">
         <li>
-          <a className='w-[170px] h-[50px]' target="_blank" rel="noreferrer" href='https://github.com/jwright90/'>
+          <a className='w-[170px]' target="_blank" rel="noreferrer" href='https://github.com/jwright90/'>
             <svg
               onMouseEnter={() => setSocialFill({ ...socialFill, 'github': '#4EE1A0' })}
               onMouseLeave={() => setSocialFill({ ...socialFill, 'github': '#FFF' })}
@@ -32,8 +32,8 @@ const Navbar = () => {
             </svg>
           </a>
         </li>
-        <li>
-          <a className='w-[170px] h-[50px]' target="_blank" rel="noreferrer" href='https://twitter.com/JWrightDev'>
+        <li className="pt-[3px]">
+          <a className='w-[170px]' target="_blank" rel="noreferrer" href='https://twitter.com/JWrightDev'>
             <svg
               onMouseEnter={() => setSocialFill({ ...socialFill, 'twitter': '#4EE1A0' })}
               onMouseLeave={() => setSocialFill({ ...socialFill, 'twitter': '#FFF' })}

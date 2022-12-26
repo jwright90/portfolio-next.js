@@ -4,7 +4,7 @@ import Thumbnail from './Thumbnaill'
 const projects = [
   { 'id': 1, 'row': 2, 'col': 2, 'img': 1, 'title': 'Amici Ashford', 'linkText1': 'Live Site', 'tags': ['WordPress'], 'href1': 'https://amiciashford.com' },
   { 'id': 2, 'row': 2, 'col': 7, 'img': 2, 'title': 'Project 2', 'tags': ['WordPress'], 'href1': '' },
-  { 'id': 3, 'row': 2, 'col': 2, 'img': 3, 'title': 'Project 3', 'tags': ['WordPress'], 'href1': '' }
+  { 'id': 3, 'row': 2, 'col': 2, 'img': 3, 'title': 'DJ Events', 'linkText1': 'Live Site', 'tags': ['Next.js', 'Tutorial'], 'href1': 'https://traversy-nextjs-dj-hz09elk9g-jwright90.vercel.app/', 'href2': 'https://github.com/jwright90/traversy-nextjs-dj' }
 ];
 
 const Projects = () => {
@@ -20,10 +20,19 @@ const Projects = () => {
             <div className={`col-span-12 col-start-1 lg:col-span-5 lg:col-start-${p.col} lg:row-start-${p.row} relative`} key={p.id}>
               <Thumbnail img={p.img} linkText1={p.linkText1 || "View Project"} href1={p.href1} href2={p.href2} />
               <div className="text-m uppercase mt-8">{p.title}</div>
-              <div className="mt-1">{p.tags[0]}</div>
+
+              <div className="flex gap-4">
+                {p.tags.map((tag) => (
+                  <div className="mt-1">
+                    {tag}
+                  </div>
+                ))}
+              </div>
+
+
               <div className="flex xl:hidden gap-4 md:justify-start justify-center" >
                 <Button text={p.linkText1 || "View Project"} css="xl:hidden mt-0 md:mb-2 mb-4 text-[16px] pb-2" href={p.href1} />
-                <Button text={p.linkText1 || "View Code"} css="xl:hidden mt-0 md:mb-2 mb-4 text-[16px] pb-2" href={p.href2} />
+                <Button text={p.linkText2 || "View Code"} css="xl:hidden mt-0 md:mb-2 mb-4 text-[16px] pb-2" href={p.href2} />
               </div>
             </div>
           )) :

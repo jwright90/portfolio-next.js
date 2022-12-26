@@ -1,47 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .app {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .container {
+  font-family: 'Outfit';
+  font-size: 20px;
+  color: #A8BFC9;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
   align-items: center;
   height: 100vh;
   width: 100vw;
+  background-color: #1A2A33;
 }
 
 .board {
+
   .boardRow {
     display: flex;
+    gap: 20px;
     flex-direction: row;
-    border-bottom: 2px solid #000;
-
-    &:last-child {
-      border-bottom: none;
-    }
 
     .square {
-      width: 80px;
-      height: 80px;
-      border-right: 2px solid #000;
-      font-size: 2.5rem;
+      background-color: #1F3641;
+      border-radius: 10px;
+      box-shadow: 0px 10px #10212A;
+      margin-top: 20px;
+      width: 120px;
+      height: 110px;
+      font-size: 3.5rem;
       padding: 0;
       overflow: hidden;
       transition: all 0.2s;
+      font-weight: 900;
 
-      &:last-child {
-        border-right: none;
+      .x {
+        color: #31C3BD;
       }
+
+      .o {
+        color: #FFC860;
+      }
+    }
+
+    :first-child.scorecard {
+      background-color: #31C3BD;
+      color: #10212A;
+    }
+
+    :nth-child(2).scorecard {
+      background-color: #A8BFC9;
+      color: #10212A;
+    }
+
+    :nth-child(3).scorecard {
+      background-color: #FFC860;
+      color: #10212A;
+    }
+
+    .scorecard {
+      background-color: #1F3641;
+      border-radius: 10px;
+      margin-top: 20px;
+      width: 120px;
+      height: 90px;
+      font-size: 2rem;
+      padding: 0;
+      overflow: hidden;
+      transition: all 0.2s;
+      font-weight: 600;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .scorecardText {
+      font-size: 16px;
+      margin-top: 15px;
+      font-weight: 900;
+      padding: 0;
+      text-transform: uppercase;
+    }
+
+    .scorecardScore {
+      margin-top: -5px;
+      margin-bottom: 20px;
+      padding: 0;
+      font-weight: 300;
     }
   }
 }
 
 .notifications {
+  display: flex;
+  gap: 20px;
   text-align: center;
+}
+
+.message {
+  background-color: #1F3641;
+  border-radius: 10px;
+  box-shadow: 0 8px #10212A;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+.message::first-letter {
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+.reset {
+  margin-top: 40px;
+  background-color: lightgrey;
+  color: #10212A;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px #10212A;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.resetIcon {
+  margin-top: 3px;
 }

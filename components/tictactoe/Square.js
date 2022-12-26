@@ -4,10 +4,11 @@ export const Square = ({ value, onClick }) => {
   return (
     <button
       className={styles.square}
-      type="button"
       onClick={onClick}
     >
-      {value}
+      <div className={value == 'X' ? styles.x : styles.o}>
+        {value}
+      </div>
     </button>
   )
 }
