@@ -58,7 +58,7 @@ const TicTacToe = () => {
 
     setIsXNext((prev) => !prev);
 
-  }, [board, winner]);
+  }, [isXNext, board, winner]);
 
   useEffect(() => {
     if (winner) {
