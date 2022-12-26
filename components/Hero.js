@@ -20,7 +20,7 @@ const Hero = () => {
             height={200}
             width={600}
             style={{ 'pointerEvents': 'none', 'userSelect': 'none' }}
-            alt="Hero Image"
+            alt="rings pattern"
           />
         </div>
 
@@ -41,12 +41,14 @@ const Hero = () => {
           src='/images/jason-profile-bw.png'
           fill
           style={{ 'pointerEvents': 'none', 'userSelect': 'none', 'objectFit': 'cover' }}
+          alt="hero picture"
         />
         <div className="h-[110px] w-[110px] md:h-[80px] md:w-[80px] lg:h-[100px] lg:w-[100px] 2xl:h-[120px] 2xl:w-[120px] absolute top-[225px] sm:top-[550px] left-[210px] sm:left-[425px] md:left-[250px] lg:left-[380px] xl:left-[480px] 2xl:left-[-50px]">
           <Image
             src='/images/pattern-circle.svg'
             fill
             style={{ 'pointerEvents': 'none', 'userSelect': 'none', 'objectFit': 'cover' }}
+            alt="circle pattern"
           />
         </div>
       </div>
