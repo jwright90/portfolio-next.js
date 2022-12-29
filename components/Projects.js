@@ -21,7 +21,7 @@ const Projects = () => {
               <Thumbnail img={p.img} linkText1={p.linkText1 || "View Project"} href1={p.href1} href2={p.href2} />
               <div className="text-m uppercase mt-8">{p.title}</div>
 
-              <div className="flex gap-4 justify-center">
+              <div className="flex gap-4 md:justify-start justify-center">
                 {p.tags.map((tag) => (
                   <div className="mt-1" key={tag}>
                     {tag}
