@@ -1,13 +1,17 @@
 import Button from './Button';
 import Thumbnail from './Thumbnaill'
+import { useUrl } from 'nextjs-current-url';
 
-const projects = [
-  { 'id': 1, 'row': 1, 'col': 2, 'img': 2, 'title': 'Tic Tac Toe', 'linkText1': 'Live Site', 'tags': ['React'], 'href1': 'https://jwrightdev.uk/tictactoe' },
-  { 'id': 2, 'row': 1, 'col': 7, 'img': 1, 'title': 'Amici Ashford', 'linkText1': 'Live Site', 'tags': ['WordPress'], 'href1': 'https://amiciashford.com' },
-  { 'id': 3, 'row': 2, 'col': 2, 'img': 3, 'title': 'DJ Events', 'linkText1': 'Live Site', 'tags': ['Next.js', 'Tutorial'], 'href1': 'https://traversy-nextjs-dj-hz09elk9g-jwright90.vercel.app/', 'href2': 'https://github.com/jwright90/traversy-nextjs-dj' }
-];
+
 
 const Projects = () => {
+  const {href: currentUrl, pathname } = useUrl() ?? {};
+
+  const projects = [
+    { 'id': 1, 'row': 1, 'col': 2, 'img': 2, 'title': 'Tic Tac Toe', 'linkText1': 'Live Site', 'tags': ['React'], 'href1': `${currentUrl}tictactoe` },
+    { 'id': 2, 'row': 1, 'col': 7, 'img': 1, 'title': 'Amici Ashford', 'linkText1': 'Live Site', 'tags': ['WordPress'], 'href1': 'https://amiciashford.com' },
+    { 'id': 3, 'row': 2, 'col': 2, 'img': 3, 'title': 'DJ Events', 'linkText1': 'Live Site', 'tags': ['Next.js', 'Tutorial'], 'href1': 'https://traversy-nextjs-dj-hz09elk9g-jwright90.vercel.app/', 'href2': 'https://github.com/jwright90/traversy-nextjs-dj' }
+  ];
 
   return (
     <section className="grid grid-cols-12 grid-rows-7 gap-4 md:gap-8 pt-[80px] pb-[80px]" id="projects">

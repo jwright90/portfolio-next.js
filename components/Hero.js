@@ -3,11 +3,13 @@ import Button from './Button';
 import Image from 'next/image'
 
 
+
 const handleClick = () => {
   document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
 }
 
 const Hero = () => {
+
   return (
     <section className="grid grid-rows-2 grid-cols-12 md:mt-[-180px] mt-[-40px]">
       <div className="col-span-12 md:col-span-6 col-start-1 lg:col-start-2 row-span-full z-50 self-center relative md:pt-[200px] pt-[50px]">
@@ -34,7 +36,6 @@ const Hero = () => {
         <Button text="Contact Me" handleClick={handleClick} />
 
       </div>
-
 
       <div className="relative bg-gradient-to-t from-dark-100 md:bg-dark-100 md:mt-[55px] min-h-[300px] sm:min-h-[450px] md:min-h-[720px] col-span-6 col-start-4 md:col-span-5 md:col-start-8 lg:col-start-7 row-end-1 row-span-1 md:row-span-full z-20 ">
         <Image
