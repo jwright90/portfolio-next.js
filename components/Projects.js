@@ -9,7 +9,7 @@ const Projects = () => {
 
   const projects = [
     { 'id': 1, 'row': 1, 'col': 2, 'img': 2, 'title': 'Tic Tac Toe', 'linkText1': 'Live Site', 'tags': ['React'], 'href1': `${currentUrl}tictactoe` },
-    { 'id': 2, 'row': 1, 'col': 7, 'img': 3, 'title': 'DJ Events', 'linkText1': 'Live Site', 'tags': ['Next.js', 'Tutorial'], 'href1': 'https://traversy-nextjs-dj-hz09elk9g-jwright90.vercel.app/', 'href2': 'https://github.com/jwright90/traversy-nextjs-dj' }
+    /*{ 'id': 2, 'row': 1, 'col': 7, 'img': 3, 'title': 'DJ Events', 'linkText1': 'Live Site', 'tags': ['Next.js', 'Tutorial'], 'href1': 'https://traversy-nextjs-dj-hz09elk9g-jwright90.vercel.app/', 'href2': 'https://github.com/jwright90/traversy-nextjs-dj' }*/
   ];
 
   return (
@@ -31,7 +31,6 @@ const Projects = () => {
                   </div>
                 ))}
               </div>
-
 
               <div className="flex xl:hidden gap-4 md:justify-start justify-center" >
                 <Button text={p.linkText1 || "View Project"} css="xl:hidden mt-0 md:mb-2 mb-4 text-[16px] pb-2" href={p.href1} />
