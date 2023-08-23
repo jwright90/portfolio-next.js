@@ -33,7 +33,7 @@ const Navbar = () => {
           </a>
         </li>
         <li className="pt-[3px]">
-          <a className='w-[170px]' target="_blank" rel="noreferrer" href='https://twitter.com/JWrightDev'>
+          <a className='w-[170px]' target="_blank" rel="noreferrer" href='https://twitter.com/jwrightwebdev'>
             <svg
               onMouseEnter={() => setSocialFill({ ...socialFill, 'twitter': '#4EE1A0' })}
               onMouseLeave={() => setSocialFill({ ...socialFill, 'twitter': '#FFF' })}
